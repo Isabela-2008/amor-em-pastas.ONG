@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Cadastro de voluntários e doadores - Amor em Patas">
+    <title>Cadastro - Amor em Patas</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">🐾 Amor em Patas</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="projetos.html">Projetos</a></li>
+                <li><a href="cadastro.html" class="active">Cadastro</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="cadastro">
+        <h1>Cadastre-se e Faça Parte da Mudança</h1>
+        <p>Preencha o formulário abaixo e junte-se à nossa rede de amor e solidariedade.</p>
+
+        <form>
+            <fieldset>
+                <legend>Informações Pessoais</legend>
+                <label>Nome Completo: <input type="text" required></label>
+                <label>E-mail: <input type="email" required></label>
+                <label>CPF: <input type="text" id="cpf" required></label>
+                <label>Telefone: <input type="tel" id="telefone" required></label>
+                <label>Data de Nascimento: <input type="date" required></label>
+                <label>Endereço: <input type="text" required></label>
+                <label>CEP: <input type="text" id="cep" required></label>
+                <label>Cidade: <input type="text" required></label>
+                <label>Estado: <input type="text" required></label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Como Deseja Contribuir?</legend>
+                <label><input type="checkbox"> Quero ser voluntário(a)</label>
+                <label><input type="checkbox"> Desejo doar recursos ou mantimentos</label>
+                <label><input type="checkbox"> Gostaria de adotar um animal</label>
+            </fieldset>
+
+            <button type="submit">Enviar Cadastro</button>
+        </form>
+    </main>
+
+    <footer class="footer">
+        <p>© 2025 Amor em Patas</p>
+        <div class="redes">
+            <a href="#">📷 Instagram</a>
+            <a href="#">📘 Facebook</a>
+            <a href="#">✉️ E-mail</a>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,147 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff8f9;
+    color: #333;
+}
+
+/* Cabeçalho */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffc2d1;
+    padding: 1em 2em;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #fff;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.2em;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+}
+
+nav a.active, nav a:hover {
+    text-decoration: underline;
+}
+
+/* Hero */
+.hero {
+    text-align: center;
+    background-color: #ffe5ec;
+    padding: 3em 1em;
+}
+
+.hero img {
+    max-width: 100%;
+    border-radius: 15px;
+    margin-top: 1em;
+}
+
+/* Galeria */
+.galeria {
+    padding: 2em;
+    text-align: center;
+}
+
+.grid-galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1em;
+    margin-top: 1.5em;
+}
+
+.grid-galeria img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.grid-galeria img:hover {
+    transform: scale(1.05);
+}
+
+/* Formulário */
+form {
+    background-color: #fff;
+    padding: 2em;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    max-width: 600px;
+    margin: 2em auto;
+}
+
+fieldset {
+    border: 2px solid #ffc2d1;
+    border-radius: 8px;
+    margin-bottom: 1.5em;
+    padding: 1em;
+}
+
+legend {
+    font-weight: bold;
+    color: #ff8fab;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.8em;
+}
+
+input[type="text"], input[type="email"], input[type="tel"], input[type="date"] {
+    width: 100%;
+    padding: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #ff8fab;
+    color: white;
+    border: none;
+    padding: 0.8em 1.5em;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+button:hover {
+    background-color: #e76f8a;
+}
+
+/* Rodapé */
+.footer {
+    background-color: #ffc2d1;
+    text-align: center;
+    color: white;
+    padding: 1.5em;
+    margin-top: 2em;
+}
+
+.footer .redes a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
